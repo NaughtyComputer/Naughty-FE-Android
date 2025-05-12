@@ -1,4 +1,4 @@
-package com.daemon.tuzamate.presentation.home
+package com.daemon.tuzamate.ui.my
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,14 +7,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import com.daemon.tuzamate.databinding.FragmentHomeBinding
-import com.daemon.tuzamate.presentation.base.MainActivity
+import com.daemon.tuzamate.databinding.FragmentSettingBinding
+import com.daemon.tuzamate.ui.base.MainActivity
 
-class HomeFragment : Fragment() {
+class SettingFragment : Fragment() {
     private lateinit var navController: NavController
-    private var _binding: FragmentHomeBinding? = null
-    private val binding: FragmentHomeBinding
-        get() = requireNotNull(_binding){"FragmentHomeBinding -> null"}
+    private var _binding: FragmentSettingBinding? = null
+    private val binding: FragmentSettingBinding
+        get() = requireNotNull(_binding){"FragmentSettingBinding -> null"}
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -22,7 +22,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentSettingBinding.inflate(inflater, container, false)
 
         return binding.root
     }

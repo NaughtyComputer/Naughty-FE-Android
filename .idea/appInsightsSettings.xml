@@ -22,10 +22,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.daemon.tuzamate" />
+                  <option name="mobileSdkAppId" value="1:4744676219:android:2f25d7f33f29f12456f3de" />
+                  <option name="projectId" value="tuzamate-28c00" />
+                  <option name="projectNumber" value="4744676219" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

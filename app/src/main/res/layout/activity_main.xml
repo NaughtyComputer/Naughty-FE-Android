@@ -6,7 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.base.MainActivity">
+    tools:context=".ui.base.MainActivity">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragment_container"
@@ -28,7 +28,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/bottom_navi_item"
         app:itemRippleColor="@null"
-        app:itemActiveIndicatorStyle="@null"
+        app:itemActiveIndicatorStyle="@color/primary_50"
         android:background="@color/white"
         app:itemIconTint="@drawable/bottom_navi_color"/>
 

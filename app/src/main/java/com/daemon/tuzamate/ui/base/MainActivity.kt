@@ -1,4 +1,4 @@
-package com.daemon.tuzamate.presentation.base
+package com.daemon.tuzamate.ui.base
 
 import android.os.Bundle
 import android.view.View
@@ -34,6 +34,18 @@ class MainActivity : AppCompatActivity() {
             when (item.itemId) {
                 R.id.navigation_home -> {
                     navController.navigate(R.id.navigation_home)
+                    true
+                }
+                R.id.navigation_chatbot -> {
+                    navController.navigate(R.id.navigation_chatbot)
+                    true
+                }
+                R.id.navigation_community -> {
+                    navController.navigate(R.id.navigation_community)
+                    true
+                }
+                R.id.navigation_setting -> {
+                    navController.navigate(R.id.navigation_setting)
                     true
                 }
                 else -> false
