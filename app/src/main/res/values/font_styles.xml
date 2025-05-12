@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="title_lg_300">
+        <item name="android:fontStyle">normal</item>
+        <item name="android:fontFamily">@font/pretendardsemibold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+    <style name="title_lg_200">
+        <item name="android:fontStyle">normal</item>
+        <item name="android:fontFamily">@font/pretendardmedium</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+    <style name="title_lg_100">
+        <item name="android:fontStyle">normal</item>
+        <item name="android:fontFamily">@font/pretendardregular</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+    <style name="title_md_300">
+        <item name="android:fontStyle">normal</item>
+        <item name="android:fontFamily">@font/pretendardsemibold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+    <style name="title_md_200">
+        <item name="android:fontStyle">normal</item>
+        <item name="android:fontFamily">@font/pretendardmedium</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+    <style name="title_md_100">
+        <item name="android:fontStyle">normal</item>
+        <item name="android:fontFamily">@font/pretendardregular</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+    <style name="title_sm_300">
+        <item name="android:fontStyle">normal</item>
+        <item name="android:fontFamily">@font/pretendardsemibold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+    <style name="title_sm_200">
+        <item name="android:fontStyle">normal</item>
+        <item name="android:fontFamily">@font/pretendardmedium</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+    <style name="title_sm_100">
+        <item name="android:fontStyle">normal</item>
+        <item name="android:fontFamily">@font/pretendardregular</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+    <style name="text_lg_300">
+        <item name="android:fontStyle">normal</item>
+        <item name="android:fontFamily">@font/pretendardsemibold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+    <style name="text_lg_200">
+        <item name="android:fontStyle">normal</item>
+        <item name="android:fontFamily">@font/pretendardmedium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+    <style name="text_lg_100">
+        <item name="android:fontStyle">normal</item>
+        <item name="android:fontFamily">@font/pretendardregular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+    <style name="text_md_300">
+        <item name="android:fontStyle">normal</item>
+        <item name="android:fontFamily">@font/pretendardsemibold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+    <style name="text_md_200">
+        <item name="android:fontStyle">normal</item>
+        <item name="android:fontFamily">@font/pretendardmedium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+    <style name="text_md_100">
+        <item name="android:fontStyle">normal</item>
+        <item name="android:fontFamily">@font/pretendardregular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+    <style name="text_sm_300">
+        <item name="android:fontStyle">normal</item>
+        <item name="android:fontFamily">@font/pretendardsemibold</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+    <style name="text_sm_200">
+        <item name="android:fontStyle">normal</item>
+        <item name="android:fontFamily">@font/pretendardmedium</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+    <style name="text_sm_100">
+        <item name="android:fontStyle">normal</item>
+        <item name="android:fontFamily">@font/pretendardregular</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+    </style>
+    <style name="caption_300">
+        <item name="android:fontStyle">normal</item>
+        <item name="android:fontFamily">@font/pretendardsemibold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+    <style name="caption_200">
+        <item name="android:fontStyle">normal</item>
+        <item name="android:fontFamily">@font/pretendardmedium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+    <style name="caption_100">
+        <item name="android:fontStyle">normal</item>
+        <item name="android:fontFamily">@font/pretendardregular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+</resources>
