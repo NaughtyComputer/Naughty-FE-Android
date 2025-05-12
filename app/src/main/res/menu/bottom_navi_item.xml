@@ -4,6 +4,21 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home"
-        android:title="home" />
+        android:title="홈" />
+
+    <item
+        android:id="@+id/navigation_chatbot"
+        android:icon="@drawable/ic_navigation_chatbot"
+        android:title="챗봇" />
+
+    <item
+        android:id="@+id/navigation_community"
+        android:icon="@drawable/ic_navigation_community"
+        android:title="커뮤니티" />
+
+    <item
+        android:id="@+id/navigation_setting"
+        android:icon="@drawable/ic_navigation_setting"
+        android:title="설정" />
 
 </menu>
