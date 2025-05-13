@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import com.daemon.tuzamate.R
 import com.daemon.tuzamate.databinding.FragmentSettingBinding
 import com.daemon.tuzamate.ui.base.MainActivity
 
@@ -33,6 +34,18 @@ class SettingFragment : Fragment() {
         navController = Navigation.findNavController(view)
 
         (requireActivity() as MainActivity).hideBottomNavigation(false)
+
+        binding.btnPostMy.setOnClickListener {
+            navController.navigate(R.id.action_navigation_setting_to_post_scrap)
+        }
+
+        binding.btnPostLike.setOnClickListener {
+            navController.navigate(R.id.action_navigation_setting_to_post_scrap)
+        }
+
+        binding.btnPostScrap.setOnClickListener {
+            navController.navigate(R.id.action_navigation_setting_to_post_scrap)
+        }
     }
 
     override fun onDestroyView() {
