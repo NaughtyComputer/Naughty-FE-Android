@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable name="card" type="com.daemon.tuzamate.ui.home.Card"/>
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        android:layout_marginHorizontal="8dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:imageUrl="@{card.imageUrl}"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{card.text}"
+                style="@style/title_lg_300"
+                android:textColor="@color/white"
+                android:padding="16dp"
+                android:gravity="center"
+                android:layout_gravity="bottom"/>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,7 +1,367 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollContent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPagerCardNews"
+                android:layout_width="match_parent"
+                android:layout_height="402dp"
+                android:clipToPadding="false"
+                android:clipChildren="false"
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp"
+                android:overScrollMode="never"
+                android:orientation="horizontal"
+                android:layout_marginTop="56dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_post_hot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewPagerCardNews">
+
+                <TextView
+                    android:id="@+id/title_hot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HOT"
+                    android:textColor="@color/black"
+                    style="@style/title_md_300"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/btn_post_hot_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:padding="20dp"
+                    android:background="@drawable/bg_btn_home_post"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title_hot">
+
+                    <TextView
+                        android:id="@+id/tv_post_hot_1_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="제목"
+                        android:textColor="@color/gray_10"
+                        style="@style/text_md_300"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_post_hot_1_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="03/12"
+                        android:textColor="@color/gray_70"
+                        style="@style/caption_100"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_post_hot_1_body"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="내용"
+                        android:textColor="@color/gray_70"
+                        style="@style/caption_100"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_post_hot_1_title" />
+
+                    <TextView
+                        android:id="@+id/tv_post_hot_1_count_heart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="99"
+                        android:textColor="@color/warning"
+                        style="@style/caption_100"
+                        android:layout_marginTop="12dp"
+                        app:drawableStartCompat="@drawable/ic_heart"
+                        android:drawablePadding="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_post_hot_1_body" />
+
+                    <TextView
+                        android:id="@+id/tv_post_hot_1_count_bookmark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="99"
+                        android:textColor="@color/success"
+                        style="@style/caption_100"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginStart="14dp"
+                        app:drawableStartCompat="@drawable/ic_bookmark"
+                        android:drawablePadding="4dp"
+                        app:layout_constraintStart_toEndOf="@+id/tv_post_hot_1_count_heart"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_post_hot_1_body" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/btn_post_hot_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:padding="20dp"
+                    android:background="@drawable/bg_btn_home_post"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_post_hot_1">
+
+                    <TextView
+                        android:id="@+id/tv_post_hot_2_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="제목"
+                        android:textColor="@color/gray_10"
+                        style="@style/text_md_300"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_post_hot_2_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="03/12"
+                        android:textColor="@color/gray_70"
+                        style="@style/caption_100"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_post_hot_2_body"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="내용"
+                        android:textColor="@color/gray_70"
+                        style="@style/caption_100"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_post_hot_2_title" />
+
+                    <TextView
+                        android:id="@+id/tv_post_hot_2_count_heart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="99"
+                        android:textColor="@color/warning"
+                        style="@style/caption_100"
+                        android:layout_marginTop="12dp"
+                        app:drawableStartCompat="@drawable/ic_heart"
+                        android:drawablePadding="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_post_hot_2_body" />
+
+                    <TextView
+                        android:id="@+id/tv_post_hot_2_count_bookmark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="99"
+                        android:textColor="@color/success"
+                        style="@style/caption_100"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginStart="14dp"
+                        app:drawableStartCompat="@drawable/ic_bookmark"
+                        android:drawablePadding="4dp"
+                        app:layout_constraintStart_toEndOf="@+id/tv_post_hot_2_count_heart"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_post_hot_2_body" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_post_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_post_hot">
+
+                <TextView
+                    android:id="@+id/title_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NEW"
+                    android:textColor="@color/black"
+                    style="@style/title_md_300"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/btn_post_new_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:padding="20dp"
+                    android:background="@drawable/bg_btn_home_post"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title_new">
+
+                    <TextView
+                        android:id="@+id/tv_post_new_1_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="제목"
+                        android:textColor="@color/gray_10"
+                        style="@style/text_md_300"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_post_new_1_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="03/12"
+                        android:textColor="@color/gray_70"
+                        style="@style/caption_100"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_post_new_1_body"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="내용"
+                        android:textColor="@color/gray_70"
+                        style="@style/caption_100"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_post_new_1_title" />
+
+                    <TextView
+                        android:id="@+id/tv_post_new_1_count_heart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="99"
+                        android:textColor="@color/warning"
+                        style="@style/caption_100"
+                        android:layout_marginTop="12dp"
+                        app:drawableStartCompat="@drawable/ic_heart"
+                        android:drawablePadding="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_post_new_1_body" />
+
+                    <TextView
+                        android:id="@+id/tv_post_new_1_count_bookmark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="99"
+                        android:textColor="@color/success"
+                        style="@style/caption_100"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginStart="14dp"
+                        app:drawableStartCompat="@drawable/ic_bookmark"
+                        android:drawablePadding="4dp"
+                        app:layout_constraintStart_toEndOf="@+id/tv_post_new_1_count_heart"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_post_new_1_body" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/btn_post_new_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:padding="20dp"
+                    android:background="@drawable/bg_btn_home_post"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_post_new_1">
+
+                    <TextView
+                        android:id="@+id/tv_post_new_2_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="제목"
+                        android:textColor="@color/gray_10"
+                        style="@style/text_md_300"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_post_new_2_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="03/12"
+                        android:textColor="@color/gray_70"
+                        style="@style/caption_100"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_post_new_2_body"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="내용"
+                        android:textColor="@color/gray_70"
+                        style="@style/caption_100"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_post_new_2_title" />
+
+                    <TextView
+                        android:id="@+id/tv_post_new_2_count_heart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="99"
+                        android:textColor="@color/warning"
+                        style="@style/caption_100"
+                        android:layout_marginTop="12dp"
+                        app:drawableStartCompat="@drawable/ic_heart"
+                        android:drawablePadding="4dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_post_new_2_body" />
+
+                    <TextView
+                        android:id="@+id/tv_post_new_2_count_bookmark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="99"
+                        android:textColor="@color/success"
+                        style="@style/caption_100"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginStart="14dp"
+                        app:drawableStartCompat="@drawable/ic_bookmark"
+                        android:drawablePadding="4dp"
+                        app:layout_constraintStart_toEndOf="@+id/tv_post_new_2_count_heart"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_post_new_2_body" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
